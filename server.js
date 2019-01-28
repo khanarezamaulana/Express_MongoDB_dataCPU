@@ -1,9 +1,7 @@
 var express = require('express');
-var cors = require('cors');
 var mongooseRoute = require('./Route/mongooseRoute')
 
 var app = express()
-app.use(cors())
 app.use(mongooseRoute)
 
 app.get('/', (req, res)=>{
